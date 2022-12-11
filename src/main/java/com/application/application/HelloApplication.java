@@ -14,9 +14,9 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException, URISyntaxException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(),800, 600);
-        stage.setTitle("AM_Application!");
-        stage.getIcons().add(new Image("/iconjson1.jpg"));
+        Scene scene = new Scene(fxmlLoader.load(),800, 400);
+        stage.setTitle("JSON one line converter");
+        stage.getIcons().add(new Image("/iconjson1.png"));
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

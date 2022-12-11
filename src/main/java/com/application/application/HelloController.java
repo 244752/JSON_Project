@@ -25,7 +25,6 @@ public class HelloController implements Initializable {
     @FXML
     private Button formatButton;
 
-
     @FXML
     private Button clearButton;
 
@@ -35,14 +34,10 @@ public class HelloController implements Initializable {
     @FXML
     private ScrollPane formattedLabel;
 
-    Text setTextColorScrollPane(){
-        Text text = new Text("Prettier json");
-        text.setFill(Color.gray(0.6));
-        return text;
-    }
 
-    String setTextColorTextArea(){
-        String text = "Put json text in one line";
+    Text setTextColorScrollPane(){
+        Text text = new Text("Converted Json text");
+        text.setFill(Color.gray(0.6));
         return text;
     }
 
@@ -77,7 +72,6 @@ public class HelloController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         formattedLabel.setContent(setTextColorScrollPane());
-        formatText.setText(setTextColorTextArea());
         formatText.setStyle("-fx-text-fill: gray ;");
     }
 
