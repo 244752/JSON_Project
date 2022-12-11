@@ -1,4 +1,4 @@
-# AM_Application
-Application to convert json format texts
+# JSON ONE LINE CONVERTER
+Application that converts to json format texts
 
 ![](Image/mainWindow.png)
